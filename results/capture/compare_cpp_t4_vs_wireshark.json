@@ -1,0 +1,132 @@
+{
+  "rows_a": 2772932,
+  "rows_b": 2772932,
+  "compared_columns": 55,
+  "skipped_columns": [
+    "dst_asset",
+    "modbus.description",
+    "s7comm.description",
+    "src_asset",
+    "xgt_fen.description"
+  ],
+  "identical": 2076944,
+  "paired_with_diff": 695198,
+  "loose_paired": 77,
+  "only_a": 713,
+  "only_b": 713,
+  "identical_rate": 0.7490064668012054,
+  "out_of_order_groups": {
+    "a": 0,
+    "b": 0
+  },
+  "protocol_a": {
+    "xgt_fen": 1620234,
+    "modbus": 529709,
+    "tcp": 307036,
+    "s7comm": 296245,
+    "arp": 12728,
+    "udp": 6267,
+    "unknown": 713
+  },
+  "protocol_b": {
+    "xgt_fen": 1620234,
+    "modbus": 529709,
+    "tcp": 307036,
+    "s7comm": 296245,
+    "arp": 12728,
+    "udp": 6472,
+    "unknown": 353,
+    "dns": 155
+  },
+  "protocol_mismatch": {
+    "udp -> dns": 77
+  },
+  "field_diff": {
+    "xgt_fen.vars": 533277,
+    "xgt_fen.translated_addr": 533277,
+    "modbus.translated_addr": 161921,
+    "modbus.regs.addr": 3008
+  },
+  "examples": {
+    "xgt_fen.vars": [
+      {
+        "ts": "2025-09-22T11:52:00.731501Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "%DB001196"
+      },
+      {
+        "ts": "2025-09-22T11:52:00.745759Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "%DB001000"
+      },
+      {
+        "ts": "2025-09-22T11:52:00.761764Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "%DB001000"
+      }
+    ],
+    "xgt_fen.translated_addr": [
+      {
+        "ts": "2025-09-22T11:52:00.731501Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "D598"
+      },
+      {
+        "ts": "2025-09-22T11:52:00.745759Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "D500"
+      },
+      {
+        "ts": "2025-09-22T11:52:00.761764Z",
+        "proto": "xgt_fen",
+        "a": "",
+        "b": "D500"
+      }
+    ],
+    "modbus.translated_addr": [
+      {
+        "ts": "2025-09-22T11:52:00.741741Z",
+        "proto": "modbus",
+        "a": "400064",
+        "b": ""
+      },
+      {
+        "ts": "2025-09-22T11:52:00.771679Z",
+        "proto": "modbus",
+        "a": "400013",
+        "b": ""
+      },
+      {
+        "ts": "2025-09-22T11:52:00.798610Z",
+        "proto": "modbus",
+        "a": "300096",
+        "b": ""
+      }
+    ],
+    "modbus.regs.addr": [
+      {
+        "ts": "2025-09-22T11:52:01.524320Z",
+        "proto": "modbus",
+        "a": "0",
+        "b": "63"
+      },
+      {
+        "ts": "2025-09-22T11:52:01.524320Z",
+        "proto": "modbus",
+        "a": "1",
+        "b": "64"
+      },
+      {
+        "ts": "2025-09-22T11:52:01.747327Z",
+        "proto": "modbus",
+        "a": "0",
+        "b": "95"
+      }
+    ]
+  }
+}

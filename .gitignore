@@ -1,0 +1,20 @@
+# 파서 저장소 (각자 clone)
+/Parser/
+/wireshark_parser/
+/wireshark/
+
+# 실제 OT 트래픽 캡처 — 절대 커밋하지 않음
+/pcap/
+/pcap-small/
+*.pcap
+*.pcapng
+
+# 파서 출력 (캡처 데이터에서 생성, GB 단위)
+/results/*/cpp_t*/
+/results/*/wireshark/
+*.csv
+*.jsonl
+
+*.log
+__pycache__/
+.DS_Store

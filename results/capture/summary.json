@@ -1,0 +1,68 @@
+{
+  "pcap": "capture.pcap",
+  "packets": 1938179,
+  "size_bytes": 189953632,
+  "runs": 5,
+  "cases": [
+    {
+      "name": "cpp (threads=1)",
+      "runs": 5,
+      "wall_median": 18.972453459000008,
+      "wall_min": 18.54545320899979,
+      "wall_max": 19.110314375000144,
+      "cpu_median": 23.099999999999994,
+      "rss_mb_max": 9138.84375,
+      "pps": 102157.53087435201,
+      "csv_rows": 2772932,
+      "output_dir": "/Users/jeff/Downloads/slime-bench/results/capture/cpp_t1"
+    },
+    {
+      "name": "cpp (threads=2)",
+      "runs": 5,
+      "wall_median": 15.789682707999873,
+      "wall_min": 15.62042399999973,
+      "wall_max": 17.096949709,
+      "cpu_median": 23.07,
+      "rss_mb_max": 8037.375,
+      "pps": 122749.71168470776,
+      "csv_rows": 2772932,
+      "output_dir": "/Users/jeff/Downloads/slime-bench/results/capture/cpp_t2"
+    },
+    {
+      "name": "cpp (threads=4)",
+      "runs": 5,
+      "wall_median": 14.985485207999773,
+      "wall_min": 14.950953832999858,
+      "wall_max": 15.019612791999862,
+      "cpu_median": 26.320000000000007,
+      "rss_mb_max": 8027.703125,
+      "pps": 129337.08672745095,
+      "csv_rows": 2772932,
+      "output_dir": "/Users/jeff/Downloads/slime-bench/results/capture/cpp_t4"
+    },
+    {
+      "name": "wireshark (train.py)",
+      "runs": 1,
+      "wall_median": 458.57374641700017,
+      "wall_min": 458.57374641700017,
+      "wall_max": 458.57374641700017,
+      "cpu_median": 645.12,
+      "rss_mb_max": 1143.40625,
+      "pps": 4226.537203980128,
+      "csv_rows": 2772932,
+      "output_dir": "/Users/jeff/Downloads/slime-bench/results/capture/wireshark"
+    },
+    {
+      "name": "tshark only (-T json)",
+      "runs": 1,
+      "wall_median": 65.63720991699984,
+      "wall_min": 65.63720991699984,
+      "wall_max": 65.63720991699984,
+      "cpu_median": 82.48000000000005,
+      "rss_mb_max": 1126.234375,
+      "pps": 29528.662209299935,
+      "csv_rows": null,
+      "output_dir": null
+    }
+  ]
+}
